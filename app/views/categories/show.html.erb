@@ -1,0 +1,11 @@
+<% if @category.name %>
+  <ul>
+    <% @category.bookmarks.each do |bookmark| %>
+      <li>
+        <%= bookmark.recipe.name %> |
+        <%= link_to "Delete", bookmark_path(bookmark),
+                    data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
