@@ -1,12 +1,24 @@
-.navbar-lewagon {
+.navbar {
+  background-color: white;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center; /* Ensures vertical alignment of items */
+  padding: 5px 30px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar img {
+  width: 60px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+.navbar .nav-right {
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  gap: 15px;
 }

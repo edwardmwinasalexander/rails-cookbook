@@ -1,4 +1,10 @@
 class BookmarksController < ApplicationController
+
+  def index
+    @bookmarks = Bookmark.all
+  end
+
+
   def new
     @category  = Category.find(params[:category_id])
     @bookmark = Bookmark.new
